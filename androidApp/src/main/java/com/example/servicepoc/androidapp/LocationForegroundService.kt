@@ -47,6 +47,7 @@ class LocationForegroundService : Service() {
         val notification = NotificationCompat.Builder(this, CHANNEL)
             .setChannelId(CHANNEL)
             .setContentTitle("Test")
+            .setSmallIcon(R.drawable.ic_android_black_24dp)
             .setPriority(NotificationManager.IMPORTANCE_DEFAULT)
             .setContentIntent(pendingIntent)
             .build()
